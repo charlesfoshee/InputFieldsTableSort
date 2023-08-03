@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2 Part 2</title>
+    <link rel="stylesheet" href="pagestyle.css">
+</head>
+<body>
+
+<div class="topLeft">
+    <button type="button" class="linkButton" onclick="window.location.href='inputFields.html'">
+        Link to input fields for JavaScript functions</button>
+</div>
+
+<div class="centered">
+    <table id="input_fields">
+        <tr>
+            <td><h3>Input</h3></td>
+            <td><h3>Length</h3></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="input0" name="dynamic_field[]" onchange="storeInput(this.id)"
+                       onkeyup="textCounter(this.id)" class="inputField"/></td>
+            <td><p id="length0" class="characterCounter">0</p></td>
+        </tr>
+    </table>
+
+    <div>
+        <button type="button" class="submitButton" onclick="addCell()">Add Cell</button>
+        <button type="button" class="removeButton" onclick="removeCell()">Remove Cell</button>
+        <button type="button" class="methodButton" onclick="sortTable()">Sort</button>
+    </div>
+</div>
+
+<div class="bottomRight">
+    <h3>Change the background color of the page</h3>
+    <button type="button" name="backgroundColor" onclick="changeColor(this.id, this.name)"
+            style="background-color: -moz-default-background-color">Gray (default)
+    </button>
+    <button type="button" name="backgroundColor" onclick="changeColor(this.id, this.name)" id="lightBlue"
+            style="background-color: lightblue">Light Blue</button>
+    <button type="button" name="backgroundColor" onclick="changeColor(this.id, this.name)" id="lightGreen"
+            style="background-color: lightgreen">Light Green</button>
+    <button type="button" name="backgroundColor" onclick="changeColor(this.id, this.name)" id="pink"
+            style="background-color: pink">Pink</button>
+    <button type="button" name="backgroundColor" onclick="changeColor(this.id, this.name)" id="yellow"
+            style="background-color: yellow">Yellow</button>
+    <br>
+    <h3>Change the foreground of the page</h3>
+    <button type="button" name="foregroundColor" onclick="changeColor(this.id, this.name)"
+            style="color: -moz-default-color">Black (default)</button>
+    <button type="button" name="foregroundColor" onclick="changeColor(this.id, this.name)" id="purple"
+            style="color: purple">Purple</button>
+    <button type="button" name="foregroundColor" onclick="changeColor(this.id, this.name)" id="red"
+            style="color: red">Red</button>
+    <button type="button" name="foregroundColor" onclick="changeColor(this.id, this.name)" id="blue"
+            style="color: blue">Blue</button>
+    <button type="button" name="foregroundColor" onclick="changeColor(this.id, this.name)" id="magenta"
+            style="color: magenta">Magenta</button>
+</div>
+
+<script src="table.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2 Part 1</title>
+    <link rel="stylesheet" href="pagestyle.css">
+</head>
+<body>
+
+<div class="topLeft">
+    <button type="button" class="linkButton" onclick="window.location.href='variableInputTableSort.html'">
+        Link to sorting table</button>
+</div>
+
+<div class="centered">
+    <h3>Enter a Number to Square</h3>
+    <input type="text" id="squareNumberInput" class="inputField">
+    <button class="submitButton" onclick="squareNumber(document.getElementById('squareNumberInput').value)">
+        Square</button>
+    <p id="squareNumberOutput"></p>
+    <br>
+    <h3>Check Repeating Characters</h3>
+    <input type="text" id="fixStartInput" class="inputField">
+    <button class="submitButton" onclick="fixStart(document.getElementById('fixStartInput').value)">Check</button>
+    <p id="fixStartOutput"></p>
+    <br>
+    <h3>Not Bad Checker</h3>
+    <input type="text" id="notBadInput" class="inputField">
+    <button class="submitButton" onclick="notBad(document.getElementById('notBadInput').value)">Check</button>
+    <p id="notBadOutput"></p>
+    <br>
+</div>
+
+<div class="bottomRight">
+   <h3>Change the background color of the page</h3>
+    <button type="button" name="backgroundColor" onclick="changeColor(this.id, this.name)"
+            style="background-color: -moz-default-background-color">Gray (default)
+    </button>
+    <button type="button" name="backgroundColor" onclick="changeColor(this.id, this.name)" id="lightBlue"
+            style="background-color: lightblue">Light Blue</button>
+    <button type="button" name="backgroundColor" onclick="changeColor(this.id, this.name)" id="lightGreen"
+            style="background-color: lightgreen">Light Green</button>
+    <button type="button" name="backgroundColor" onclick="changeColor(this.id, this.name)" id="pink"
+            style="background-color: pink">Pink</button>
+    <button type="button" name="backgroundColor" onclick="changeColor(this.id, this.name)" id="yellow"
+            style="background-color: yellow">Yellow</button>
+    <br>
+    <h3>Change the foreground of the page</h3>
+    <button type="button" name="foregroundColor" onclick="changeColor(this.id, this.name)"
+            style="color: -moz-default-color">Black (default)</button>
+    <button type="button" name="foregroundColor" onclick="changeColor(this.id, this.name)" id="purple"
+            style="color: purple">Purple</button>
+    <button type="button" name="foregroundColor" onclick="changeColor(this.id, this.name)" id="red"
+            style="color: red">Red</button>
+    <button type="button" name="foregroundColor" onclick="changeColor(this.id, this.name)" id="blue"
+            style="color: blue">Blue</button>
+    <button type="button" name="foregroundColor" onclick="changeColor(this.id, this.name)" id="magenta"
+            style="color: magenta">Magenta</button>
+</div>
+
+<script src="squareNumber.js"></script>
+<script src="fixStart.js"></script>
+<script src="notBad.js"></script>
+<script src="table.js"></script>
+</body>
+</html>
